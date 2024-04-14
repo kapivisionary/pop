@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>kapi fashion design</title>
+  <link rel="stylesheet" type="text/css" href="kapi.css">
+  <script src="kapi.js" async></script>
+</head>
+<body> 
+      <div class="content">
+        <div class="logo">
+          <img src="https://th.bing.com/th?id=OIP.qJ44tZe_EB8gsU0tXLL_3gHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Website Logo">
+        </div>
+        <ul class="nav-menu">
+          <li class="active">
+          <li><a href="#" onclick="toggleContent('home')">Home</a></li>
+          <li><a href="#" onclick="toggleContent('about')">About</a></li>
+          <li>
+            <a href="#">Services</a>
+            <ul class="sub-menu">
+              <li><a href="#" onclick="toggleContent('shoes')"><span style="background-color:darkgray;;">brand-shoes</span></a></li>
+              <li><a href="#" onclick="toggleContent('watch')"><span style="background-color:darkgray;;">brand-watch</span></a></li>
+              <li><a href="#" onclick="toggleContent('perfume')"><span style="background-color:darkgray;">brand-perfume</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#" onclick="toggleContent('contact')">contact</a></li>
+          <li><a href="#" onclick="toggleContent('comment')">comment</a></li>
+          
+        </ul>
+        
+        <section id="contact-info" class="contact-info" style="display: none;">
+          <div class="contact-container">
+          <h2>Contact information</h2>
+          <p> <div class="image-container"><i class="fas fa-phone-alt fa-2x" style="font-size: 4em;"></i><b>Phone: +251930259299</b></div></p>
+          <p> <div class="image-container"><i class="fas fa-envelope fa-2x" style="font-size: 4em;"></i><b>Email: kapigere00@gmail.com</b></div></p>
+          <p> <div class="image-container"><i class="fas fa-map-marker-alt fa-3x" style="font-size: 4em;"></i><b>Address: MEKELLE</b></div></p>
+          <p> <div class="image-container"><image  src="https://th.bing.com/th?id=OIP.1uVqd3dRtDFUdoZez4i5SwHaHw&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="60px"></image><b>TikTok: @kapigere27</b></div></p>
+          <p> <div class="image-container"><image src="https://th.bing.com/th?id=OIP.RiSs0t_YUc7Rx2JhK8y0OAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="60px"></image>Telegram: @ipakap</b></div></p>
+        </div>
+      </section>
+        
+        <section id="About-info" class="About-info" style="display: none;">
+            <h2>About me:</h2>
+                <p  style="font-size:20px;">
+
+                  Welcome to my world! I'm Kapital Gebrehiwet, a passionate software engineering student currently  at Mekelle University. With a deep love for both technology and the art of e-commerce, I have embarked on an exciting journey of creating a captivating website that offers a wide range of brand shoes, perfumes, and watches for men.
+
+As a software engineer, I thrive on the challenges of developing innovative solutions that enhance user experiences and streamline online shopping. With a keen eye for detail and a knack for problem-solving, I have meticulously crafted this website to provide a seamless and enjoyable browsing and purchasing experience for men seeking top-quality products.
+
+My website brings together a curated selection of brand shoes, perfumes, and watches, tailored specifically for men who value style, sophistication, and quality. With a deep understanding of the latest trends and a commitment to excellence, I have handpicked each product to ensure that they meet the highest standards of craftsmanship.
+
+By combining my technical expertise with a passion for e-commerce, I have created an intuitive and user-friendly interface that allows visitors to easily navigate through the extensive collection of products. From casual sneakers to elegant timepieces and irresistible fragrances, my website offers a diverse range of options to suit every individual's taste and style.
+
+ I am committed to continuously improving and expanding my website to provide an ever-growing selection of high-quality products and an exceptional shopping experience. Customer feedback and suggestions are always welcome as I strive to exceed expectations and build long-lasting relationships with each visitor.
+
+Thank you for joining me on this exciting journey of style, elegance, and technology. Explore the world of premium brand shoes, perfumes, and watches for men through my website and discover the perfect addition to your personal collection.
+
+Welcome to a world where style meets convenience. Welcome to my website.
+                </p>
+                <img src="images/kapital.png" width="120px">
+            </section>
+            <section id="home-info" class="home-info" style="display: none;">
+              <h1 style="background-color: silver;"><span style="font-size:80px">KAPI</span> SHOES,WATCH AND PERFUME SHOP:</h1><p>" world where style meets convenience"</p>
+              </section>
+              <section id="shoes-info" class="shoes-info" style="display: none;">
+                <h2>Brand Shoes - Shoe Types</h2>
+
+                <!-- Shoe Type 1 -->
+                <div class="shoe-type">
+                <img src="https://th.bing.com/th?id=OIP.WZigh2n4zGL-esc3PNbi0wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"  width="400px" ></a></a>
+                  <div style="background-color: grey;color: black;"><h2>Nike Air Max 90::
+                  </h2>
+                  <p ><b>Description:</b>The Nike Air Max 90 is a classic athletic shoe known for its stylish design and exceptional comfort. It features
+                     a visible Air Max unit in the heel for cushioning and impact absorption. The upper is made of a combination of leather, synthetic 
+                     materials, and mesh, providing durability and breathability.</p>
+                  <p>Price:4500 ETB</p>
+                  <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+            <div id="contact-dialog-nike"></div>
+                </div>
+              </div>
+              
+                <!-- Shoe Type 2 -->
+                <div class="shoe-type">
+                  <img src="https://th.bing.com/th?id=OIP.2K3RCW7640j0No9Zk5flewHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"  width="400px" alt="Sneakers"></a>
+                  <div style="background-color: grey;"><h3>Converse Chuck Taylor All Stars:</h3>
+                  <p><b>Description:</b>The Converse Chuck Taylor All Star is a timeless and iconic shoe loved by many. It features a canvas upper, a rubber toe cap, and a vulcanized rubber sole. With its simple yet versatile design, it can be paired with various outfits for a casual and stylish look.</p>
+                  <p>Price: 6500</p>
+                  <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+            <div id="contact-ALLSTAR"></div>
+                </div>
+              </div>
+              
+                <!-- Shoe Type 3 -->
+                <div class="shoe-type">
+                 <img src="https://th.bing.com/th?id=OIP.-F0eoD99vJVQKCcrubqpgQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                  <div style="background-color: grey;"><h2>Vans Old Skool:</h2>
+                  <p>Description: The Vans Old Skool is a classic skateboarding shoe that has become a fashion staple.
+                     It showcases a low-top silhouette with a durable canvas and suede upper. The shoe is recognizable 
+                     by its signature side stripe and waffle outsole, providing excellent grip and board feel.</p>
+                  <p>Price:4800 ETB</p>
+                  <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+            <div id="contact-vans"></div>
+          </div>
+                </div>
+                <div class="shoe-type">
+                  <a href="mailto:kapigere00@gmail.com"><img src="https://www.80scasualclassics.co.uk/images/puma-suede-classic-xxi-trainer-grey-white-p17134-93203_image.jpg" width="400px" alt="Dress Shoes"></a>
+                  <div style="background-color: grey;"><h2>Puma Suede Classic:</h2>
+                    <p>descrption:The Puma Suede Classic is a retro-inspired sneaker that exudes a cool and casual vibe.
+                       It features a suede upper with Puma's signature Formstrip branding on the sides. The shoe has a padded
+                        collar and tongue for added comfort and a rubber outsole for traction.</p>
+                   <p>Price:6500 ETB</p>
+                   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+            <div id="contact-puma"></div></div>
+                 </div>
+                 <div class="shoe-type">
+                  <a href="mailto:kapigere00@gmail.com"><img src="https://www.bing.com/th?id=OIP.CmyJRb2WYeesz4pZaE3BaQHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                  <div style="background-color: grey;" ><h2>Timberland 6-Inch Premium Boot</h2>
+                   <p><b>DESCRPTION:</b>The Timberland 6-Inch Premium Boot is an iconic work boot recognized for its durability and rugged style.</p>
+                   <p>Price:5000 ETB</p>
+                   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                   <div id="contact-timber"></div></div>
+                 </div>
+
+                 <div class="shoe-type">
+                  <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th?id=OIP.eG8A53rywu2a12sdu9cRCwHaHa&w=250&h=250&c=8&rs=1&qlt=30&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                  <div style="background-color: grey;" ><h2>Reebok Classic Leather:</h2>
+                   <p><b>DESCRPTION:</b>The Reebok Classic Leather is a timeless sneaker known for its clean and retro-inspired design.
+                     It has a soft leather upper, a die-cut EVA midsole for lightweight cushioning, and a high-abrasion rubber outsole for traction. 
+                     The shoe's simple yet stylish look makes it a versatile choice for everyday wear.</p>
+                   <p>Price:5000 ETB</p>
+                   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                   <div id="contact-reebook"></div></div>
+                 </div>
+
+                 <div class="shoe-type">
+                  <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th/id/OIP.1EFQq51Y6c529zC-9c2H2wHaJ4?w=148&h=198&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="400px" alt="Dress Shoes"></a>
+                  <div style="background-color: grey;" ><h2>Louis Vuitton </h2>
+                   <p><b>DESCRPTION:</b>The Louis Vuitton Archlight Sneakers are a stylish and futuristic choice for those seeking a high-end 
+                    fashion statement. They feature a chunky, oversized sole with a unique wave-shaped design, creating a dynamic and eye-catching
+                     silhouette. The upper combines a mix of materials such as technical fabrics, leather, and mesh, often incorporating the iconic
+                      Louis Vuitton monogram print.</p>
+                   <p>Price:7500 ETB</p>
+                   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+            <div id="contact-louis"></div></div>
+                 </div>
+
+                 <div class="shoe-type">
+                  <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th/id/OIP.zzP_Sd9r2yIOUVxSbq3c4gHaHu?w=175&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="400px" alt="Dress Shoes"></a>
+                  <div style="background-color: grey;" ><h2>ALEXANDER MC QUEEN:</h2>
+                   <p><b>DESCRPTION:</b>The Alexander McQueen Oversized Sneakers are a fashion-forward and edgy take on a classic sneaker design.
+                     They feature a chunky platform sole with exaggerated proportions, giving them a distinctive and bold look. The upper is often
+                      made of premium leather and showcases the iconic McQueen skull logo on the heel counter.</p>
+                   <p>Price:5000 ETB</p>
+                   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+            <div id="contact-mcqueen"></div></div>
+                 </div>
+
+                 <div class="shoe-type">
+                  <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th?id=OIP.7piCkeLeB_xbna2nUMp0RgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                  <div style="background-color: grey;" ><h2>JORDAN 23:</h2>
+                   <p><b>DESCRPTION:</b>The Jordan 23 is praised for its comfortable fit and cushioning, thanks to features such as Zoom Air 
+                    technology and a supportive construction.</p>
+                   <p>Price:6000 ETB</p>
+                   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                   <div id="contact-jordan"></div></div>
+                 </div>
+
+                 
+                </section>
+                <section id="comment-info" class="comment-info" style="display: none;">
+                  <form>
+                      <fieldset>
+                        <legend>Comment</legend>
+                        <label for="name">Name :</label><br><br>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name"><br><br>
+                  
+    
+                        <label for="name">E-Mail :</label><br><br>
+                        <input type="email" name="name" id="email" placeholder="Enter Your Email"><br><br>
+                    
+    
+                        <label for="name">Phone Number :</label><br><br>
+                        <input type="phone" name="name" id="phone" placeholder="Enter Your Phone Number"><br><br>
+    
+                        <label for="message">Message :</label><br><br>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea><br><br><br>
+                        <input type="reset" value="clear">
+                        <input type="submit" value="submit">
+
+                   </fieldset>
+                   </form>
+                   </section>
+                    
+                   <section id="watch-info" class="watch-info" style="display: none;">
+                    <h2>Brand watch - watch Types</h2>
+                    <div class="watch-type">
+                     <a href="https://th.bing.com/th?id=OIP.RKTGWrMBE2i5CVUXSRNtSQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" target=""><img src="https://th.bing.com/th?id=OIP.RKTGWrMBE2i5CVUXSRNtSQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"  width="400px" ></a></a>
+                      <div style="background-color: grey;color: black;"><h2>Tissot Le Locle</h2>
+                      <p >Description:The Tissot Le Locle is a classic and elegant Swiss watch that showcases traditional craftsmanship.
+                         It features a stainless steel or gold-plated case, a clean and refined dial with Roman numeral markers, and a date function.
+                          The Le Locle is powered by an automatic movement and represents Tissot's heritage and attention to detail.</p>
+                      <p>Price:4500 ETB</p>
+                      <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                     <div id="contact-tissot"></div>
+                    </div>
+                    </div>
+                  
+                    <div class="watch-type">
+                      <img src="https://th.bing.com/th?id=OIP.JN7M4MPCOwXWYr4vl58b_wHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"  width="400px" alt="Sneakers"></a>
+                      <div style="background-color: grey;"><h3>Patek Philippe Nautilus:</h3>
+                      <p>DescriptionThe Patek Philippe Nautilus is an elegant and sophisticated sports watch that has become an icon in the luxury 
+                        watch industry. It features a distinctive porthole-shaped case, a textured dial with horizontal lines, and an integrated bracelet. The Nautilus is crafted with exquisite attention to detail and is powered by a self-winding mechanical movement.</p>
+                      <p>Price: 6000 ETB</p> <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                      <div id="contact-patek"></div></div>
+                    </div>
+                  
+          
+                    <div class="watch-type">
+                     <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th?id=OIP.hLX1-hZD1pU2UOY0JzI2SwHaL5&w=197&h=316&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                      <div style="background-color: grey;"><h3><b>Rolex Submariner:</b></h3>
+                      <p><b>Description:<b>The Rolex Submariner is an iconic luxury diving watch known for its timeless design and exceptional durability.
+                         It features a stainless steel case, a unidirectional rotating bezel, and a scratch-resistant sapphire crystal. The Submariner
+                          is water-resistant up to 300 meters and is powered by a reliable automatic movement.</p>
+                      <p>Price: 12000 ETB</p>
+                      <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                      <div id="contact-rolex"></div>
+                    </div>
+                    </div>
+                    <div class="watch-type">
+                      <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th?id=OIP.RBKSHT93iyenJKG-vyiWiwHaHq&w=245&h=254&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                      <div style="background-color: grey;"><h2>Omega Speedmaster Professional:</h2>
+                        <p><b>Descrption:</b>The Omega Speedmaster Professional, also known as the "Moonwatch," 
+                          is a legendary timepiece with a rich history. It was the first watch worn on the moon
+                           and is highly regarded for its precision and reliability. The Speedmaster Professional
+                            features a stainless steel case, a black dial with three sub-dials, and a manual-winding movement.</p>
+                       <p>Price:6500 ETB</p> <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                       <div id="contact-omega"></div></div>
+                     </div>
+                     <div class="watch-type">
+                      <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th?id=OIP.LYF0N9LHx5EcGQzRjZKK0QHaKe&w=210&h=297&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                      <div style="background-color: grey;"> <h3>Audemars Piguet Royal Oak:</h3>
+                       <p>Description: The Audemars Piguet Royal Oak is a legendary luxury watch known for its avant-garde design and impeccable craftsmanship.
+                         It features a stainless steel or precious metal case, a "tapisserie" patterned dial, and an integrated bracelet with a unique octagonal shape.
+                          The Royal Oak is powered by a self-winding mechanical movement..</p>
+                       <p>Price: 10,500 ETB</p> <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                       <div id="contact-audemars"></div></div>
+                     </div>
+
+                     <div class="watch-type">
+                      <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th?id=OIP.RyORL_9TOLSnwrAxGXmN6wHaKS&w=212&h=294&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                       <div style="background-color: grey;"><h3>TAG Heuer Carrera</h3>
+                       <p>Description: The TAG Heuer Carrera is a classic and timeless chronograph watch inspired by the world of motorsports. It features a 
+                        stainless steel or precious metal case, a clean and legible dial with chronograph sub-dials, and a comfortable bracelet or strap. 
+                        The Carrera combines sporty aesthetics with precise timekeeping..</p>
+                       <p>Price: 6500 ETB</p> <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                       <div id="contact-tag"></div></div>
+                     </div>
+    
+
+                    <div class="watch-type">
+                      <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th/id/OIP.yUv7Xi3jhXdMCDICZUPdWQHaFj?w=272&h=204&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="400px" alt="Dress Shoes"></a>
+                       <div style="background-color: grey;"><h3>Breitling Navitimer:</h3>
+                       <p>Description: The Breitling Navitimer is an iconic pilot's watch renowned for its aviation-inspired design and functionality. It features 
+                        a slide-rule bezel for performing various calculations, a chronograph function, and a distinctive dial with a circular slide rule. 
+                        The Navitimer is powered by a self-winding mechanical movement..</p>
+                       <p>Price: 4800 ETB</p> <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                       <div id="contact-navitimer"></div></div>
+                     </div>
+                    
+
+                    <div class="watch-type">
+                      <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th/id/OIP.avv7dqWr5wmmJiJqfkHElgHaE8?w=272&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="400px" alt="Dress Shoes"></a>
+                       <div style="background-color: grey;"><h3>Jaeger-LeCoultre Reverso::</h3>
+                       <p>Description:The Jaeger-LeCoultre Reverso is a unique and elegant watch that stands out with its reversible case. Originally designed for polo players, the case can be flipped
+                         to protect the dial. The Reverso features a range of dial designs, from classic to artistic, and is powered by a manual-winding or automatic movement</p>
+                       <p>Price: 10000 ETB</p> <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                       <div id="contact-jaeger"></div>
+                     </div>
+                    </div>
+                  </section>
+
+
+                    <section id="perfume-info" class="perfume-info" style="display: none;">
+                      <h2>Brand perfume - perfume Types</h2>
+      
+                      <!-- Shoe Type 1 -->
+                      <div class="perfume-type">
+                       <a href="https://th.bing.com/th?id=OIP.Yf4ziplEsMzr_46hLumaUgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"><img src="https://th.bing.com/th?id=OIP.Yf4ziplEsMzr_46hLumaUgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"  width="400px" ></a></a>
+                        <div style="background-color: grey;color: black;"><h2>Dior Sauvage</h2>
+                        <p ><b>Description:</b> Sauvage by Dior is a bold and fresh fragrance with a blend of bergamot, pepper, 
+                          ambroxan, and woody notes. It exudes a rugged and sophisticated character, making it a popular choice for many men.</p>
+                        <p>Price:50000 ETB</p>   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                        <div id="contact-dior"></div></div>
+                      </div>
+                    
+                      <!-- Shoe Type 2 -->
+                      <div class="perfume-type">
+                        <a href="https://th.bing.com/th?id=OIP.rya8uIg4ZVVSWg3lofZ7UQHaJS&w=223&h=280&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"><img src="https://th.bing.com/th?id=OIP.rya8uIg4ZVVSWg3lofZ7UQHaJS&w=223&h=280&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"></a>
+                        <div style="background-color: grey;"><h3>Chanel Bleu de Chanel:</h3>
+                        <p>Description: Bleu de Chanel is a versatile and elegant fragrance with a blend of citrus, ginger, cedar, and sandalwood.
+                           It offers a modern and refined scent that is suitable for both casual and formal occasions.</p>
+                        <p>Price: 7000 ETB</p>   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                        <div id="contact-chanel"></div></div>
+                      </div>
+                    
+                      <div class="perfume-type">
+                       <a href="mailto:kapigere00@gmail.com" target="_blank"><img src="https://th.bing.com/th/id/OIP.jGn8x7ULOz5l6b6j4c69rwHaHa?w=206&h=195&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="400px" alt="Dress Shoes"></a>
+                        <div style="background-color: grey;"><h3>Acqua di Giò by Giorgio Armani</h3>
+                        <p>Description: Acqua di Giò is a classic aquatic fragrance that captures the freshness of the sea. It combines notes of marine accords,
+                           citrus, rosemary, and patchouli, creating a refreshing and sophisticated scent.</p>
+                        <p>Price: 10000 ETB</p>   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                        <div id="contact-acqua"></div></div>
+                      </div>
+                      <div class="perfume-type">
+                        <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th?id=OIP.4xfAr-ndVY8s9vXyNjCYmwHaIa&w=234&h=266&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                        <div style="background-color: grey;"><h2>Dior Homme</h2>
+                          <p>descrption:Dior Homme is a refined and sensual fragrance with a blend of iris, lavender, leather, and woods. It offers
+                             a sophisticated and masculine aroma, perfect for those seeking a touch of elegance.</p>
+                         <p>Price:6500 ETB</p>   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                         <div id="contact-homme"></div></div>
+                       </div>
+                      
+                       <div class="perfume-type">
+                        <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th?id=OIP.qjlbZSWsBmiJx7qkmAKvegHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                         <div style="background-color: grey;"><h3>Creed Aventus:</h3>
+                         <p>Description:Creed Aventus is a highly regarded fragrance known for its unique blend of pineapple, birch, blackcurrant,
+                           and ambergris. It offers a sophisticated and charismatic scent that has gained a cult following.</p>
+                         <p>Price: 18000 ETB</p>   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                         <div id="contact-creed"></div></div>
+                       </div>
+
+                       <div class="perfume-type">
+                        <a href="mailto:kapigere00@gmail.com"><img src="https://www.bing.com/th?id=OIP.u1WbqTU4t5LrB6fqynB7wgHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                         <div style="background-color: grey;"><h3>Paco Rabanne 1 Million</h3>
+                         <p>Description:Paco Rabanne 1 Million is a bold and attention-grabbing fragrance with a combination of blood mandarin, cinnamon,
+                           leather, and amber. It exudes a powerful and confident aura, suitable for those who want to make a statement</p>
+                         <p>Price: 10000 ETB</p>   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                         <div id="contact-paco"></div></div>
+                       </div>
+
+                       <div class="perfume-type">
+                        <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th/id/OIP.HGdladrT99iLTHRXrykA9QHaHa?w=201&h=201&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="400px" alt="Dress Shoes"></a>
+                         <div style="background-color: grey;"><h3>Tom Ford Noir</h3>
+                         <p>Description:Tom Ford Noir is a luxurious and seductive fragrance with notes of bergamot, violet, black pepper, and amber.
+                           It exudes a warm and spicy aura, ideal for evening wear or special occasions.</p>
+                         <p>Price: 15000 ETB</p>   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                         <div id="contact-tomford"></div></div>
+                       </div>
+
+                       <div class="perfume-type">
+                        <a href="mailto:kapigere00@gmail.com"><img src="https://th.bing.com/th?id=OIP.s68oTwDZBBd2dzPgn96vOgHaIS&w=236&h=264&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" width="400px" alt="Dress Shoes"></a>
+                         <div style="background-color: grey;"><h3>ARMANI CODE</h3>
+                         <p>Description: Armani Code is a sophisticated and seductive fragrance for the modern man. It combines notes of bergamot, lemon,
+                           and star anise with hints of olive blossom, guaiac wood, and tobacco. This fragrance exudes confidence and charm.</p>
+                         <p>Price: 15000 ETB</p>   <button class="contact-button" onclick="displayContactInfo('kapigere00@gmail.com','+251930259299','+251930259299')">Contact Seller</button>
+                         <div id="contact-armani"></div></div>
+                       </div>
+                      </section>
+          
+          </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+/* Style the navigation menu */
+body{
+    background-color:aliceblue;
+    background-image: url(https://ahp.alharamainperfumes.com/wp-content/uploads/2017/01/DSC9094.jpg);
+    background-size:auto;
+    background-position: center;
+    background-repeat:initial;
+    background-attachment: fixed;
+  }
+
+nav {
+    display:flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 1px;
+    width: 100%;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    height: 80px; /* Adjust the height as needed */
+  }
+  ul.nav-menu {
+    list-style-type: none;
+    margin: 20px;
+    padding: 40px;
+    background-color: grey;
+    font-size: 30px;
+  }
+  
+  ul.nav-menu li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  ul.nav-menu li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  ul.nav-menu li a:before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  ul.nav-menu li a:hover:before {
+    transform: scaleX(1);
+  }
+  ul.sub-menu {
+    display: none;
+    position: fixed;
+    background-color:tomato;
+    padding: 10px;
+    flex-direction: column-reverse;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  ul.nav-menu li:hover > ul.sub-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:lavenderblush;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  .contact-container {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0; /* Add this line to remove the default margin */
+  }
+.About-info {
+    padding: 20px;
+    display: block;
+    background-color: snow;
+}
+
+.About-info h2 {
+    margin-top: 0;
+}
+
+.About-info p {
+    margin: 10px 0;
+}
+.shoe-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 40px;
+}
+/*.shoe-type {
+  position: relative;
+  overflow: hidden;
+}*/
+
+.shoe-type img {
+  transition: transform 0.3s ease;
+}
+
+.shoe-type img:hover {
+  transform: scale(1.1);
+}
+
+.shoe-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  background-image: url(https://th.bing.com/th/id/OIP.Zs0wPVrK1LLVk42OQPfJzwHaEo?w=290&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+}
+
+.shoe-type:hover {
+  transform: translateY(-5px);
+}
+
+.shoe-type a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.shoe-type h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.shoe-type p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: black;
+}
+.home-info {
+  
+  padding: 20px;
+  display: block;
+  background-color: grey;
+}
+
+.home-info h2 {
+  margin-top: 0;
+}
+
+.home-info p {
+  margin: 10px 0;
+}
+.comment-info {
+  display: block;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-info legend {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.comment-info label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comment-info input[type="text"],
+.comment-info input[type="email"],
+.comment-info input[type="phone"],
+.comment-info textarea {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid gold;
+  border-radius: 4px;
+}
+
+.comment-info input[type="reset"],
+.comment-info input[type="submit"] {
+  padding: 10px 20px;
+  background-color: gold;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-info input[type="reset"]:hover,
+.comment-info input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.comment-info textarea {
+  resize: vertical;
+}
+.watch-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 40px;
+}
+.watch-type img {
+  transition: transform 0.3s ease;
+}
+
+.watch-type img:hover {
+  transform: scale(1.1);
+}
+.watch-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  background-image: url(https://img.freepik.com/premium-photo/watch-vintage-pocket-with-smoke-black-background_309761-601.jpg);
+}
+
+.watch-type:hover {
+  transform: translateY(-5px);
+}
+
+.watch-type a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.watch-type h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.watch-type p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: black;
+}
+.perfume-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 40px;
+}
+
+.perfume-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  background-image: url(https://image.freepik.com/free-photo/luxury-perfume-black-background_160204-2526.jpg);
+}
+
+.perfume-type:hover {
+  transform: translateY(-5px);
+}
+
+.perfume-type a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.perfume-type h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.perfume-type p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: black;
+}
+.perfume-type img {
+  transition: transform 0.3s ease;
+}
+
+.perfume-type img:hover {
+  transform: scale(1.1);
+}
+.contact-button {
+  background-color: #4CAF50; /* Set the background color */
+  color: white; /* Set the text color */
+  padding: 10px 20px; /* Add padding to the button */
+  font-size: 16px; /* Set the font size */
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Add a cursor pointer on hover */
+  border-radius: 4px; /* Add rounded corners */
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.contact-button:hover {
+  background-color: #45a049; /* Change the background color on hover */
+}
+#contact-dialog {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#contact-dialog strong {
+  font-weight: bold;
+}
+
+#contact-dialog a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contact-dialog a:hover {
+  text-decoration: underline;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .image-container:hover {
+    transform: scale(1.1);
+  }
+
+  .image-container img {
+    transition: opacity 0.3s;
+  }
+
+  .image-container:hover img {
+    opacity: 0.7;
+  }
